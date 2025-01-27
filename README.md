@@ -53,7 +53,7 @@ Once inside the container, verify the RISC-V toolchain:
 riscv64-unknown-elf-gcc --version
 ```
 
-## Example Usage
+## Basic Usage
 ### Compiling a RISC-V Program
 1. Create a simple C program (example.c):
    ```c
@@ -74,7 +74,13 @@ riscv64-unknown-elf-gcc --version
    ```bash
    spike pk example
    ```
-
+### Gather Instructions
+1. Run the program with --log-commits and output to a log file:
+   ```bash
+   spike --log-commits pk example > log.txt 2>&1
+   ```
+2. Check the log.txt file for the instructions information
+   
 ## Troubleshooting
 
 ### Common Issues
