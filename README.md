@@ -67,7 +67,12 @@ riscv64-unknown-elf-gcc --version
 
 2. Compile the program:
    ```bash
-   riscv64-unknown-elf-gcc -o example example.c
+   riscv64-unknown-elf-gcc example.c -o example 
+   ```
+
+3. Run the program:
+   ```bash
+   spike pk example
    ```
 
 ## Troubleshooting
