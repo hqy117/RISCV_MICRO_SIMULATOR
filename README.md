@@ -71,5 +71,4 @@ riscv64-unknown-elf-gcc --version
 
 3. **Image pull failed**
    - Check internet connection
-   - Verify Docker Hub credentials if using private repository
    - Try with sudo if on Linux
