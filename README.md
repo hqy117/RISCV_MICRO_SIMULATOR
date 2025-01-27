@@ -74,6 +74,11 @@ riscv64-unknown-elf-gcc --version
    ```bash
    spike pk example
    ```
+   The output should be:
+   ```
+   Hello RISC-V World!
+   ```
+   
 ### Gather Instructions
 1. Run the program with --log-commits and output to a log file:
    ```bash
@@ -100,3 +105,12 @@ riscv64-unknown-elf-gcc --version
 3. **Image pull failed**
    - Check internet connection
    - Try with sudo if on Linux
+   ```
+   
+## Acknowledgments
+
+This Docker environment is built based on the following open-source projects:
+
+* [RISC-V ISA Simulator](https://github.com/riscv-software-src/riscv-isa-sim) - The Spike RISC-V ISA Simulator
+* [RISC-V GNU Compiler Toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) - RISC-V C and C++ cross-compiler
+* [RISC-V Proxy Kernel](https://github.com/riscv-software-src/riscv-pk) - RISC-V Proxy Kernel and Boot Loader
