@@ -25,9 +25,6 @@ Before starting, ensure you have:
    sudo docker --version
    ```
 
-### For Windows:
-Refer to [Docker's official Docs] https://docs.docker.com/desktop/setup/install/windows-install/
-
 ### For macOS:
 1. Download Docker Desktop for Mac from [Docker's official Docs](https://docs.docker.com/desktop/setup/install/mac-install/)
 2. Double-click the .dmg file
@@ -37,6 +34,9 @@ Refer to [Docker's official Docs] https://docs.docker.com/desktop/setup/install/
    ```bash
    docker --version
    ```
+
+### For Windows:
+Please refer to [Docker's official Docs] https://docs.docker.com/desktop/setup/install/windows-install/
 
 ## Setting Up RISC-V Development Environment
 
