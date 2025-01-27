@@ -11,11 +11,6 @@ Before starting, ensure you have:
 
 ## Docker Installation
 
-### For Windows:
-Soon
-### For macOS:
-Soon
-
 ### For Linux (Ubuntu/Debian):
 1. Update package index:
    ```bash
@@ -29,6 +24,11 @@ Soon
    ```bash
    sudo docker --version
    ```
+
+### For Windows:
+Soon
+### For macOS:
+Soon
 
 ## Setting Up RISC-V Development Environment
 
