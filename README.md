@@ -84,7 +84,7 @@ riscv64-unknown-elf-gcc --version
    ```bash
    spike --log-commits pk example > log.txt 2>&1
    ```
-2. Check the log.txt file for the instructions information
+2. Check the log.txt file for the instruction execution trace
    
 ## Troubleshooting
 
@@ -105,7 +105,6 @@ riscv64-unknown-elf-gcc --version
 3. **Image pull failed**
    - Check internet connection
    - Try with sudo if on Linux
-   ```
    
 ## Acknowledgments
 
