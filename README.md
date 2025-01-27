@@ -65,9 +65,9 @@ riscv64-unknown-elf-gcc --version
 
 2. **Container not starting**
    - Ensure Docker service is running:
-     ```bash
-     sudo systemctl start docker
-     ```
+   ```bash
+   sudo systemctl start docker
+   ```
 
 3. **Image pull failed**
    - Check internet connection
