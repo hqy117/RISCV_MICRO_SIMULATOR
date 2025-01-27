@@ -53,6 +53,23 @@ Once inside the container, verify the RISC-V toolchain:
 riscv64-unknown-elf-gcc --version
 ```
 
+## Example Usage
+### Compiling a RISC-V Program
+1. Create a simple C program (example.c):
+   ```c
+   #include <stdio.h>
+   
+   int main() {
+       printf("Hello RISC-V World!\n");
+       return 0;
+   }
+   ```
+
+2. Compile the program:
+   ```bash
+   riscv64-unknown-elf-gcc -o example example.c
+   ```
+
 ## Troubleshooting
 
 ### Common Issues
