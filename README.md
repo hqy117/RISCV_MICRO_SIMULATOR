@@ -26,10 +26,10 @@ Before starting, ensure you have:
    ```
 
 ### For Windows:
-Soon
+Refer to [Docker's official Docs] https://docs.docker.com/desktop/setup/install/windows-install/
 
 ### For macOS:
-1. Download Docker Desktop for Mac from [Docker's official website](https://docs.docker.com/desktop/setup/install/mac-install/)
+1. Download Docker Desktop for Mac from [Docker's official Docs](https://docs.docker.com/desktop/setup/install/mac-install/)
 2. Double-click the .dmg file
 3. Drag Docker to your Applications folder
 4. Start Docker from your Applications folder
