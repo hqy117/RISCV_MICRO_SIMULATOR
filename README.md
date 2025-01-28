@@ -1,6 +1,6 @@
-# RISCV_SIMULATOR
+# RISCV MICROARCHITECTURE SIMULATOR
 This repository is for ECE201
-# RISC-V Development Environment Setup Guide
+# Environment Setup Guide
 ## Prerequisites
 Before starting, ensure you have:
 - A computer with administrative privileges
