@@ -74,7 +74,7 @@ Make sure you are under ```/marss-riscv/src``` directory
    ./example
    ```
    The output should be:
-   ```
+   ```bash
    Hello RISC-V World!
    ```
    as well as performance information.
@@ -83,11 +83,11 @@ Make sure you are under ```/marss-riscv/src``` directory
 1. Press ```ctrl+c``` to exit the simulator
 2. Go to ```/marss-riscv/configs``` directory
 3. Edit the following config files as you wish:
-   ```
+   ```bash
    riscv64_inorder_soc.cfg
    ```
    or
-   ```
+   ```bash
    riscv64_outoforder_soc.cfg
    ```
 5. [Restart the Simulator](#start-the-simulator)
