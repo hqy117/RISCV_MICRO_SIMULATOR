@@ -42,23 +42,17 @@ Please refer to [Docker's official Docs] https://docs.docker.com/desktop/setup/i
 
 ### Pull the RISC-V Development Image
 ```bash
-docker pull qhou3/riscv-dev
+docker pull qhou3/riscv-micro
 ```
 
 ### Run the Container
 ```bash
-docker run -it qhou3/riscv-dev
+docker run -it qhou3/riscv-micro
 ```
 
 To mount a local directory (recommended for persistent work):
 ```bash
-docker run -it -v /path/to/local/directory:/work qhou3/riscv-dev
-```
-
-### Verifying the Environment
-Once inside the container, verify the RISC-V toolchain:
-```bash
-riscv64-unknown-elf-gcc --version
+docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
 ```
 
 ## Basic Usage
