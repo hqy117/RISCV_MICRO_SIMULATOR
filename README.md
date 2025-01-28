@@ -1,16 +1,12 @@
 # RISCV_SIMULATOR
 This repository is for ECE201
 # RISC-V Development Environment Setup Guide
-
 ## Prerequisites
-
 Before starting, ensure you have:
 - A computer with administrative privileges
 - Internet connection
 - Terminal/Command Prompt access
-
 ## Docker Installation
-
 ### For Linux (Ubuntu/Debian):
 1. Update package index:
    ```bash
@@ -24,7 +20,6 @@ Before starting, ensure you have:
    ```bash
    sudo docker --version
    ```
-
 ### For macOS:
 1. Download Docker Desktop for Mac from [Docker's official Docs](https://docs.docker.com/desktop/setup/install/mac-install/)
 2. Double-click the .dmg file
@@ -34,31 +29,24 @@ Before starting, ensure you have:
    ```bash
    docker --version
    ```
-
 ### For Windows:
-Please refer to [Docker's official Docs] https://docs.docker.com/desktop/setup/install/windows-install/
-
+Please refer to [Docker's official Docs](https://docs.docker.com/desktop/setup/install/windows-install/)
 ## Setting Up RISC-V Development Environment
-
 ### Pull the RISC-V Development Image
 ```bash
 docker pull qhou3/riscv-micro
 ```
-
 ### Run the Container
 ```bash
 docker run -it qhou3/riscv-micro
 ```
-
 To mount a local directory (recommended for persistent work):
 ```bash
 docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
 ```
-
 ## Basic Usage
 ### Start the Simulator
 Make sure you are under ```/marss-riscv/src``` directory
-
 1. In-order processor
    ```bash
    ./marss-riscv -ctrlc -rw ../configs/riscv64_inorder_soc.cfg
@@ -77,12 +65,10 @@ Make sure you are under ```/marss-riscv/src``` directory
        return 0;
    }
    ```
-
 2. Compile the program:
    ```bash
    gcc -o example example.c
    ```
-
 3. Run the program:
    ```bash
    ./example
@@ -101,24 +87,20 @@ Make sure you are under ```/marss-riscv/src``` directory
    riscv64_inorder_soc.cfg #or
    riscv64_outoforder_soc.cfg
    ```
-4. [Restart the simulator](start-the-simulator)
+4. [Return to Start the Simulator](#start-the-simulator)
 
 ## Troubleshooting
-
 ### Common Issues
-
 1. **Docker permission denied**
    ```bash
    sudo usermod -aG docker $USER
    newgrp docker
    ```
-
 2. **Container not starting**
    - Ensure Docker service is running:
    ```bash
    sudo systemctl start docker
    ```
-
 3. **Image pull failed**
    - Check internet connection
    - Try with sudo if on Linux
