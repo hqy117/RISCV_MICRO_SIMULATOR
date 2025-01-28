@@ -57,7 +57,8 @@ docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
 
 ## Basic Usage
 ### Start the Simulator
-Make sure you are under ```/marss-riscv/src`` directory
+Make sure you are under ```/marss-riscv/src``` directory
+
 1. In-order processor
    ```bash
    ./marss-riscv -ctrlc -rw ../configs/riscv64_inorder_soc.cfg
