@@ -55,6 +55,12 @@ Make sure you are under ```/marss-riscv/src``` directory
    ```bash
    ./marss-riscv -ctrlc -rw ../configs/riscv64_outoforder_soc.cfg
    ```
+3. Once in RISC-V environment, set up (should be automatically done, manully just in case):
+   ```bash
+   export PYTHONPATH=/usr/lib64/python2.7/site-packages/
+   env-update
+   ```
+
 ### Compiling a RISC-V Program
 1. Create a simple C program (example.c):
    ```c
