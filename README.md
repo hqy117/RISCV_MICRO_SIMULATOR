@@ -95,10 +95,11 @@ Make sure you are under ```/marss-riscv/src``` directory
    
 ### Configuring the Simulator
 1. Press ```ctrl+c``` to exit the simulator
-2. Go to ```/marss-riscv/configs directory
+2. Go to ```/marss-riscv/configs``` directory
 3. Edit the following config files as you wish:
-   ```riscv64_inorder_soc.cfg or
-      riscv64_outoforder_soc.cfg
+   ```
+   riscv64_inorder_soc.cfg #or
+   riscv64_outoforder_soc.cfg
    ```
 4. [Restart the simulator](start-the-simulator)
 
