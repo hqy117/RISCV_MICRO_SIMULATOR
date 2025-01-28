@@ -87,7 +87,7 @@ Make sure you are under ```/marss-riscv/src``` directory
    riscv64_inorder_soc.cfg #or
    riscv64_outoforder_soc.cfg
    ```
-4. [Return to Start the Simulator](#start-the-simulator)
+4. [Restart the Simulator](#start-the-simulator)
 
 ## Troubleshooting
 ### Common Issues
