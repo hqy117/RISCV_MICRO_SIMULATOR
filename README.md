@@ -56,6 +56,15 @@ docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
 ```
 
 ## Basic Usage
+### Start the Simulator
+1. In-order processor
+   ```bash
+   ./marss-riscv -ctrlc -rw ../configs/riscv64_inorder_soc.cfg
+   ```
+2. Out-of-order processor
+   ```bash
+   ./marss-riscv -ctrlc -rw ../configs/riscv64_outoforder_soc.cfg
+   ```
 ### Compiling a RISC-V Program
 1. Create a simple C program (example.c):
    ```c
@@ -69,25 +78,28 @@ docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
 
 2. Compile the program:
    ```bash
-   riscv64-unknown-elf-gcc example.c -o example 
+   gcc -o example example.c
    ```
 
 3. Run the program:
    ```bash
-   spike pk example
+   ./example
    ```
    The output should be:
    ```
    Hello RISC-V World!
    ```
+   as well as performance information.
    
-### Gather Instructions
-1. Run the program with --log-commits and output to a log file:
-   ```bash
-   spike --log-commits pk example > log.txt 2>&1
+### Configuring the Simulator
+1. Press ```ctrl+c``` to exit the simulator
+2. Go to ```/marss-riscv/configs directory
+3. Edit the following config files as you wish:
+   ```riscv64_inorder_soc.cfg or
+      riscv64_outoforder_soc.cfg
    ```
-2. Check the log.txt file for the instruction execution trace
-   
+4. [Restart the simulator](start-the-simulator)
+
 ## Troubleshooting
 
 ### Common Issues
@@ -107,11 +119,3 @@ docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
 3. **Image pull failed**
    - Check internet connection
    - Try with sudo if on Linux
-   
-## Acknowledgments
-
-This Docker environment is built based on the following open-source projects:
-
-* [RISC-V ISA Simulator](https://github.com/riscv-software-src/riscv-isa-sim) - The Spike RISC-V ISA Simulator
-* [RISC-V GNU Compiler Toolchain](https://github.com/riscv-collab/riscv-gnu-toolchain) - RISC-V C and C++ cross-compiler
-* [RISC-V Proxy Kernel](https://github.com/riscv-software-src/riscv-pk) - RISC-V Proxy Kernel and Boot Loader
