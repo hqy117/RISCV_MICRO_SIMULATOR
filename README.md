@@ -89,13 +89,17 @@ Make sure you are under ```/marss-riscv/src``` directory
 1. Press ```ctrl+c``` to exit the simulator
 2. Go to ```/marss-riscv/configs``` directory
 3. Edit the following config files as you wish:
+   Either:
    ```bash
-   [riscv64_inorder_soc.cfg](riscv64_inorder_soc.cfg)
+   configs/riscv64_inorder_soc.cfg
    ```
-   or
+   ([View In-Order Configuration File](riscv64_inorder_soc.cfg))
+   
+   or:
    ```bash
-   [riscv64_outoforder_soc.cfg](riscv64_outoforder_soc.cfg)
+   configs/riscv64_outoforder_soc.cfg
    ```
+   ([View Out-of-Order Configuration File](riscv64_outoforder_soc.cfg))
 5. [Restart the Simulator](#start-the-simulator)
 
 ## Troubleshooting
