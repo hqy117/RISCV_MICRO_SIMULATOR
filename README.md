@@ -42,7 +42,7 @@ docker run -it qhou3/riscv-micro
 ```
 To mount a local directory (recommended for persistent work):
 ```bash
-docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro /bin/bash
+docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro
 ```
 ## Basic Usage
 ### Start the Simulator
