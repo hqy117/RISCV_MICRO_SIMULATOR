@@ -34,15 +34,15 @@ Please refer to [Docker's official Docs](https://docs.docker.com/desktop/setup/i
 ## Setting Up RISC-V Development Environment
 ### Pull the RISC-V Development Image
 ```bash
-docker pull qhou3/riscv-micro
+docker pull qhou3/riscv-micro-sim
 ```
 ### Run the Container
 ```bash
-docker run -it qhou3/riscv-micro
+docker run -it qhou3/riscv-micro-sim
 ```
 To mount a local directory (recommended for persistent work):
 ```bash
-docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro
+docker run -it -v /path/to/local/directory:/work qhou3/riscv-micro-sim
 ```
 ## Basic Usage
 ### Start the Simulator
