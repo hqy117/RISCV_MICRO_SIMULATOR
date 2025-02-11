@@ -1,5 +1,5 @@
 # RISC-V MICROARCHITECTURE SIMULATOR
-This repository is for ECE201
+This repository is for ECE201/401
 # Environment Setup Guide
 ## Prerequisites
 Before starting, ensure you have:
