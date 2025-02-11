@@ -3,7 +3,7 @@ This repository is for ECE201/401
 # Environment Setup Guide
 ## Prerequisites
 Before starting, ensure you have:
-- A computer with Linux system
+- Linux system (If not, follow the instruction in assignment page)
 - Internet connection
 - Terminal/Command Prompt access
 ## Docker Installation
