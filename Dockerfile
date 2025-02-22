@@ -1,20 +1,18 @@
-FROM ubuntu:22.04
+FROM fedora:41
 
-# Avoid interactive prompts during package installation
-ENV DEBIAN_FRONTEND=noninteractive
-
-# Install dependencies including linux-tools-generic for perf
-RUN apt-get update && apt-get install -y \
-    build-essential \
-    libssl-dev \
-    libsdl1.2-dev \
-    libcurl4-openssl-dev \
+# Install dependencies
+RUN dnf update -y && dnf install -y \
+    gcc gcc-c++ \
+    openssl-devel \
+    SDL-devel \
+    libcurl-devel \
     wget \
-    xz-utils \
+    xz \
     git \
     vim \
     nano \
-    linux-tools-generic
+    perf \
+    make
 
 # Create working directory
 WORKDIR /marss-riscv
