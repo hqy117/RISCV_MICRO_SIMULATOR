@@ -62,8 +62,7 @@ Make sure you are under ```/marss-riscv/src``` directory
    ```
 
 ### Compiling a RISC-V Program
-1. Create a simple C program (example.c):
-   If you don't know how to create a file via the command line, refer to [File Creation Guide](#file-creation-guide).
+1. Create a simple C program (example.c, If you don't know how to create a file via the command line, refer to [File Creation Guide](#file-creation-guide)):
    ```c
    #include <stdio.h>
    
