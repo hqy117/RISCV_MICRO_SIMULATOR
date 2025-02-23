@@ -63,6 +63,7 @@ Make sure you are under ```/marss-riscv/src``` directory
 
 ### Compiling a RISC-V Program
 1. Create a simple C program (example.c):
+   If you don't know how to create a file via the command line, refer to [File Creation Guide](#file-creation-guide).
    ```c
    #include <stdio.h>
    
@@ -74,11 +75,11 @@ Make sure you are under ```/marss-riscv/src``` directory
      return 0;
    }
    ```
-2. Compile the program:
+3. Compile the program:
    ```bash
    gcc -o example example.c
    ```
-3. Run the program:
+4. Run the program:
    ```bash
    ./example
    ```
@@ -121,3 +122,20 @@ Make sure you are under ```/marss-riscv/src``` directory
 3. **Image pull failed**
    - Check internet connection
    - Try with sudo if on Linux
+
+
+## File Creation Guide
+If you don't know how to create a file using the command line, you can use one of the following methods:
+
+### Using `cat`
+```bash
+cat > example.c << 'EOF'
+copy and paste code
+EOF
+```
+
+### Using `vim`
+```bash
+vim example.c
+```
+Press `i` to enter insert mode, paste the code, press `Esc`, then type `:wq` and press `Enter` to save and exit.
