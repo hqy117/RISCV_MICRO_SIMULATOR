@@ -130,7 +130,7 @@ If you don't know how to create a file using the command line, you can use one o
 ### Using `cat`
 ```bash
 cat > example.c << 'EOF'
-// copy and paste code
+copy and paste code
 EOF
 ```
 
