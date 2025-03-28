@@ -124,7 +124,7 @@ Make sure you are under ```/marss-riscv/src``` directory
 
 
 ## File Creation Guide
-If you don't know how to create a file using the command line, you can use one of the following methods:
+If you don't know how to create a file using the command line, you can use following methods:
 
 ### Using `cat`
 ```bash
@@ -132,9 +132,3 @@ cat > example.c << 'EOF'
 copy and paste code
 EOF
 ```
-
-### Using `vim`
-```bash
-vim example.c
-```
-Press `i` to enter insert mode, paste the code, press `Esc`, then type `:wq` and press `Enter` to save and exit.
